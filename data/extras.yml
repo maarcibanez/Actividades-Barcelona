@@ -24,4 +24,18 @@
 #   enlace: "https://..."
 #   fuente: "CaixaForum"
 
-eventos: []
+eventos:
+  - titulo: "Raquel Cruces: Cantiris d'arrel electrónica"
+    fecha: "2026-07-23"
+    hora: "19:00"
+    lugar: "Centre Cívic Can Verdaguer"
+    descripcion: "Concierto gratuito, c/ Piferrer, 100."
+    enlace: "https://barcelonamusical.blogspot.com/2026/07/agenda-de-concerts-de-la-setmana-del-20.html"
+    fuente: "Barcelona Musical"
+  - titulo: "Vénes Blauggi: cantautora"
+    fecha: "2026-07-24"
+    hora: "19:00"
+    lugar: "Centre Cívic Can Deu"
+    descripcion: "Concierto gratuito, Plaça de la Concòrdia, 13."
+    enlace: "https://barcelonamusical.blogspot.com/2026/07/agenda-de-concerts-de-la-setmana-del-20.html"
+    fuente: "Barcelona Musical"
