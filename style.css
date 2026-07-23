@@ -1,0 +1,58 @@
+# Centros cuyos conciertos/actividades musicales queremos seguir.
+# "aliases" son las distintas formas en que el nombre puede aparecer
+# en la agenda oficial de Barcelona (Open Data BCN). Si un centro nunca
+# aparece, revisa/añade alias aquí antes de tocar el script.
+#
+# "tomasa_cuevas_pendiente": no se ha podido confirmar todavía a qué
+# equipamiento se refiere. Mientras tanto no filtra nada; en cuanto se
+# confirme, se añade aquí igual que los demás.
+
+venues:
+  - name: "Casa Elizalde"
+    aliases: ["Casa Elizalde"]
+
+  - name: "Centre Cívic Urgell"
+    aliases: ["Centre Cívic Urgell", "CC Urgell"]
+
+  - name: "Centre Cívic Cotxeres Borrell"
+    aliases: ["Cotxeres Borrell", "Centre Cívic Cotxeres"]
+
+  - name: "Centre Cívic Fort Pienc"
+    aliases: ["Fort Pienc"]
+
+  - name: "Centre Cívic Navas"
+    aliases: ["Centre Cívic Navas"]
+
+  - name: "Centre Cívic La Sagrera - La Barraca"
+    aliases: ["La Sagrera", "La Barraca", "Centre Cívic Sagrera"]
+
+  - name: "Centre Cívic Can Deu"
+    aliases: ["Can Deu"]
+
+  - name: "Centre Cívic Josep M. Trias i Peitx"
+    aliases: ["Trias i Peitx", "Trias i Peix", "Tries i Peix"]
+
+  - name: "Centre Cívic Can Verdaguer"
+    aliases: ["Can Verdaguer"]
+
+  - name: "Centre Cívic El Sortidor"
+    aliases: ["El Sortidor", "Sortidor"]
+
+  - name: "Centre Cívic Albareda"
+    aliases: ["Albareda"]
+
+  - name: "Seu del Districte de Nou Barris"
+    aliases: ["Districte de Nou Barris", "Seu Nou Barris"]
+
+# Palabras clave para quedarnos solo con música/conciertos y no con
+# talleres, exposiciones, etc. Puedes añadir más si algo se cuela o falta.
+music_keywords:
+  - "música"
+  - "musica"
+  - "concert"
+  - "cantada"
+  - "coral"
+  - "cor "
+  - "jazz"
+  - "havaneres"
+  - "recital"
