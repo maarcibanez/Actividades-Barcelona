@@ -1,0 +1,27 @@
+# Eventos que NO vienen de la agenda oficial de datos abiertos, porque
+# vienen de entidades privadas (CaixaForum) o de ciclos que no siempre
+# están bien indexados (Tangent, Dimecres d'estiu...).
+#
+# Cada domingo, antes de que se genere la web, revisa a mano estas webs
+# y añade aquí lo que encuentres para las próximas 1-2 semanas:
+#
+#   - CaixaForum Barcelona (programación / música):
+#       https://caixaforum.org/es/barcelona/musica
+#   - Tangent, ciclo cultural del districte de Sant Martí:
+#       (buscar "Tangent Sant Martí" + año en el buscador de centres cívics
+#       o en la web del Districte de Sant Martí)
+#   - Dimecres d'estiu:
+#       (confirmar cada verano dónde se publica el cartel; en años
+#       anteriores ha sido un ciclo de conciertos de miércoles de verano)
+#
+# Formato de cada entrada — copia el bloque y rellena:
+#
+# - titulo: "Nombre del concierto"
+#   fecha: "2026-08-05"        # AAAA-MM-DD
+#   hora: "19:00"
+#   lugar: "CaixaForum Barcelona"
+#   descripcion: "Breve descripción en una frase."
+#   enlace: "https://..."
+#   fuente: "CaixaForum"
+
+eventos: []
