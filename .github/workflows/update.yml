@@ -1,0 +1,37 @@
+name: Actualizar conciertos de la semana
+
+on:
+  schedule:
+    # Cada domingo a las 07:00 hora de España (05:00/06:00 UTC según el
+    # horario de verano). GitHub a veces retrasa unos minutos los cron.
+    - cron: "0 6 * * 0"
+  workflow_dispatch: {}   # permite lanzarlo a mano desde la pestaña "Actions"
+
+permissions:
+  contents: write
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: pip install pyyaml
+
+      - name: Generar la página
+        run: python scripts/generate_site.py
+
+      - name: Publicar cambios si hay alguno nuevo
+        run: |
+          git config user.name "Actualizador automático"
+          git config user.email "actions@github.com"
+          git add docs/index.html
+          git diff --cached --quiet && echo "Sin cambios esta semana" || git commit -m "Actualización semanal de conciertos"
+          git push
