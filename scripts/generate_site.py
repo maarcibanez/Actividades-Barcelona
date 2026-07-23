@@ -283,24 +283,20 @@ def main():
     venues = load_yaml(DATA_DIR / "venues.yml").get("venues", [])
     keywords = load_yaml(DATA_DIR / "venues.yml").get("music_keywords", [])
 
-    aviso = None
     oficiales = []
     try:
         oficiales = collect_official_events(venues, keywords)
     except Exception as exc:  # noqa: BLE001
+        # La agenda oficial del Ayuntamiento bloquea el acceso automático
+        # (403). Lo dejamos anotado aquí, en el registro técnico, pero NO
+        # se muestra en la página: la persona que la lee no necesita ver
+        # avisos de una API que ha fallado, solo la lista de conciertos.
         print(f"[aviso] No se pudo leer la agenda oficial: {exc}", file=sys.stderr)
-        aviso = (
-            "⚠️ Esta semana no se ha podido consultar la agenda oficial del "
-            "Ayuntamiento automáticamente. Estos son solo los eventos añadidos a mano."
-        )
 
     extras = collect_extra_events()
     todos = oficiales + extras
 
-    if not oficiales and not extras and aviso is None:
-        aviso = None  # sencillamente no hay eventos esta semana, no es un error
-
-    html = render_html(todos, aviso)
+    html = render_html(todos, aviso=None)
 
     DOCS_DIR.mkdir(exist_ok=True)
     (DOCS_DIR / "index.html").write_text(html, encoding="utf-8")
