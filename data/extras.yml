@@ -25,6 +25,13 @@
 #   fuente: "CaixaForum"
 
 eventos:
+  - titulo: "Vénes Blauggi — Cantautora"
+    fecha: "2026-07-24"
+    hora: "19:00"
+    lugar: "Centre Cívic Can Deu"
+    descripcion: "Concierto de cantautora en directo, ideal para pasar una tarde tranquila de música en vivo. Entrada gratuita. Plaça de la Concòrdia, 13."
+    enlace: "https://barcelonamusical.blogspot.com/2026/07/agenda-de-concerts-de-la-setmana-del-20.html"
+    fuente: "Barcelona Musical"
   - titulo: "[EJEMPLO] Cor de veus blanques"
     fecha: "2026-07-25"
     hora: "12:00"
